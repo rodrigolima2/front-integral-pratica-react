@@ -1,0 +1,177 @@
+*{
+    box-sizing: border-box;
+
+    font-family: 'Roboto', sans-serif;
+
+    padding: 0;
+    margin: 0;
+}
+
+.App{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 152px 44px 10px 106px;
+}
+
+.menu-lateral{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 100%;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    background: #313131;
+
+    padding: 20px;
+}
+
+.menu-lateral--open{
+    width: 199px;
+}
+
+.menu-lateral__options{
+    cursor: pointer;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 43px;
+
+    width: 100%;
+}
+
+.menu-lateral__option{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    
+    width: 100%;
+}
+
+.menu-lateral__title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;   
+    color: #888888;
+}
+
+.App__title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    color: #000000;
+
+    margin-bottom: 52px;
+}
+
+.gallery{
+    cursor: default;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    width: 100%;
+}
+
+.image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+}
+
+.image__img{
+    cursor: pointer;
+    
+    width: 300px;
+    height: 200px;
+    
+    margin-bottom: 18px;
+}
+
+.image__info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+}
+
+.image__title{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px; 
+    color: #000000;
+}
+
+.image__date{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    color: #5C5C5C;
+}
+
+.image__like{
+    position: absolute;
+    top: 18px;
+    right: 18px;
+}
+
+.modal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.modal__close{
+    cursor: pointer;
+
+    width: 34px;
+    height: 34px;
+
+    position: absolute;
+    top: 90px;
+    right: 45px;
+}
+
+.modal__img{
+    cursor: pointer;
+
+    width: 555px;
+    height: 370px;
+
+    position: relative;
+}
+
+.modal__like{
+    position: absolute;
+    top: 30%;
+    right: 35%;
+}
+
+.hidden{display: none;}
